@@ -8,6 +8,7 @@
 .single-price {
     margin: 6rem auto 0;
     width: 90%;
+    max-width: 700px;
     overflow: hidden;
     font-family: 'Karla', sans-serif;
     border-radius: .5rem;
@@ -21,6 +22,10 @@
     &__subscription-section,
     &__why-us-section {
         padding: 2.5rem 2rem;
+
+        @include m.breakpoint-md() {
+            padding: 3rem;
+        }
     }
 
     &__h2 {
@@ -41,6 +46,7 @@
     &__subtitle {
         color: v.$bright-yellow;
         font-weight: 700;
+        font-size: 1.7rem;
     }
 
     &__subtitle,
@@ -52,15 +58,30 @@
         color: v.$grayish-blue;
     }
 
+    &__grid {
+        @include m.breakpoint-md() {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
     &__subscription-section {
         margin-top: 1rem;
         background-color: v.$cyan;
+
+        @include m.breakpoint-md() {
+            margin-top: 0;
+        }
     }
 
     &__price-container {
         display: inline-block;
         margin-top: 2rem;
         color: v.$light-gray;
+
+        @include m.breakpoint-md() {
+            margin-top: 1rem;
+        }
     }
 
     &__price {
@@ -80,10 +101,14 @@
         border-radius: .5rem;
         background-color: v.$bright-yellow;
         box-shadow: 0 1rem 2.6rem -1.8rem scale-color(v.$black, $lightness: 35%);
+
+        &:hover {
+            background-color: scale-color(v.$bright-yellow, $lightness: -15%);
+        }
     }
 
     &__why-us-section {
-        background-color: scale-color(v.$cyan, $lightness: 4%);
+        background-color: scale-color(v.$cyan, $lightness: 7%);
     }
 
     &__ul {
