@@ -52,26 +52,21 @@ img {
 
 .footer {
     margin-top: 3rem;
+    padding: 0 1.28rem 1.28rem;
+    font-family: 'Lexend Deca', sans-serif;
     font-size: 1.2rem;
+    text-align: center;
+
+    &__link {
+        color: v.$black;
+
+        &:hover {
+            color: scale-color(v.$black, $lightness: 40%);
+        }
+
+        &:focus-visible {
+            outline: 2px solid v.$black;
+            border-radius: 1px;
+        }
+    }
 }
-
-// .footer {
-//     margin-top: 3rem;
-//     padding: 0 1.28rem 1.28rem;
-//     font-family: 'Lexend Deca', sans-serif;
-//     font-size: 1.2rem;
-//     text-align: center;
-
-//     &__link {
-//         color: v.$very-dark-cyan;
-
-//         &:hover {
-//             color: scale-color(v.$very-dark-cyan, $lightness: 10%);
-//         }
-
-//         &:focus-visible {
-//             outline: 2px solid v.$black;
-//             border-radius: 1px;
-//         }
-//     }
-// }
