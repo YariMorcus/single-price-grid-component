@@ -1,5 +1,5 @@
 {
-  "name": "project-name-here",
+  "name": "Single grid price component",
   "description": "Challenge by Frontend Mentor (https://www.frontendmentor.io?ref=challenge)",
   "version": "1.0.0",
   "main": "index.js",
@@ -220,7 +220,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/YariMorcus/single-price-grid-component"
   },
   "author": "Yari Morcus",
   "license": "MIT",
