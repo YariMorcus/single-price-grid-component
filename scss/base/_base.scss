@@ -4,6 +4,9 @@
 // Import mixins
 @use '../abstracts/mixins' as m;
 
+// Import typography
+@use 'typography' as t;
+
 /* Set core root defaults */
 html {
     font-size: 10px;
@@ -17,6 +20,11 @@ html {
 body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: v.$light-gray;
+    font-size: t.$body-font-size;
 }
 
 /* A elements that don't have a class get default styles */
@@ -42,7 +50,13 @@ img {
     }
 }
 
+.footer {
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
 // .footer {
+//     margin-top: 3rem;
 //     padding: 0 1.28rem 1.28rem;
 //     font-family: 'Lexend Deca', sans-serif;
 //     font-size: 1.2rem;

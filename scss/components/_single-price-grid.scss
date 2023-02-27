@@ -4,3 +4,93 @@
 // Import mixins and variables
 @use '../abstracts/mixins' as m;
 @use '../abstracts/variables' as v;
+
+.single-price {
+    margin: 6rem auto 0;
+    width: 90%;
+    overflow: hidden;
+    font-family: 'Karla', sans-serif;
+    border-radius: .5rem;
+    background-color: v.$white;
+
+    &__header {
+        background-color: v.$white;
+    }
+
+    &__header,
+    &__subscription-section,
+    &__why-us-section {
+        padding: 2.5rem 2rem;
+    }
+
+    &__h2 {
+        color: v.$cyan;
+    }
+
+    &__h3 {
+        text-transform: capitalize;
+    }
+
+    &__h3,
+    &__subscription-section,
+    &__price,
+    &__button {
+        color: v.$white;
+    }
+
+    &__subtitle {
+        color: v.$bright-yellow;
+        font-weight: 700;
+    }
+
+    &__subtitle,
+    &__introduction {
+        margin-top: 1.5rem;
+    }
+
+    &__introduction {
+        color: v.$grayish-blue;
+    }
+
+    &__subscription-section {
+        margin-top: 1rem;
+        background-color: v.$cyan;
+    }
+
+    &__price-container {
+        display: inline-block;
+        margin-top: 2rem;
+        color: v.$light-gray;
+    }
+
+    &__price {
+        margin-right: 1rem;
+        font-weight: 700;
+        font-size: 3.3rem;
+    }
+
+    &__button {
+        display: block;
+        margin-top: 3rem;
+        padding: 1.5rem;
+        width: 100%;
+        font-weight: 700;
+        text-transform: capitalize;
+        border: none;
+        border-radius: .5rem;
+        background-color: v.$bright-yellow;
+        box-shadow: 0 1rem 2.6rem -1.8rem scale-color(v.$black, $lightness: 35%);
+    }
+
+    &__why-us-section {
+        background-color: scale-color(v.$cyan, $lightness: 4%);
+    }
+
+    &__ul {
+        margin-bottom: 0;
+        padding-left: 0;
+        list-style-type: none;
+        color: v.$light-gray;
+        font-size: 1.5rem;;
+    }
+}
